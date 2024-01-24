@@ -1,0 +1,238 @@
+.about {
+    overflow-x: hidden;
+}
+.about__inner {
+}
+.about__list {
+}
+.about__list-item {
+    position: relative;
+    align-items: center;
+    margin-top: 160px;
+    gap: 220px;
+    display: flex;
+    list-style: none;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Mask.svg);
+        width: 445px;
+        height: 445px;
+        left: calc(50% + 620px);
+        top: 1px;
+        z-index: -1;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Group\ 32.svg);
+        width: 740px;
+        height: 150px;
+        left:  calc(50% - 70px);
+        top: 290px;
+        z-index: 1;
+    }
+}
+
+.list-item__main {
+    width: 445px;
+}
+.list-item__main-title {
+    margin-bottom: 24px;
+    color: #495567;
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    letter-spacing: -2.143px;
+}
+.list-item__main-text {
+    margin-bottom: 40px;
+    color: #939CAA;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400; 
+    line-height: 25px; /* 166.667% */
+}
+.list-item__main-link {
+    background-color: #FCB72B;
+    text-decoration: none;
+    color: white;
+    padding:14px 44px;
+}
+.list-item__img {
+    border-radius: 50%;
+}
+.about__list-item2 {
+    position: relative;
+    align-items: center;
+    margin-top: 160px;
+    gap: 220px;
+    display: flex;
+    list-style: none;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Mask.svg);
+        width: 445px;
+        height: 445px;
+        left: calc(50% - 1100px);
+        top: 1px;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Group\ 13\ Copy.svg);
+        width: 740px;
+        height: 150px;
+        left:  calc(50% - 1160px);
+        top: 1px;
+        z-index: 1;
+    }
+}
+.about__list-item3 {
+    position: relative;
+    align-items: center;
+    margin-top: 160px;
+    gap: 230px;
+    display: flex;
+    list-style: none;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Mask.svg);
+        width: 445px;
+        height: 445px;
+        left: calc(50% + 620px);
+        top: 1px;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../images/Group\ 32.svg);
+        width: 740px;
+        height: 150px;
+        left:  calc(50% - 70px);
+        top: 290px;
+        z-index: 1;
+    }
+}
+
+
+
+@media only screen and ( max-width:768px )
+{
+    .about__list-item{
+        text-align: center;
+        display: block;
+
+        &::after{
+            left: calc(50% + 280px);
+            top: 300px;   
+        }
+
+        &::before{
+            left:  calc(50% - 350px);
+            top: 590px;
+        }
+    }
+
+    .about__list-item2{
+        text-align: center;
+        display: block;
+
+        &::after{
+            left: calc(50% - 720px);
+            top: 1px;
+        }
+
+        &::before{
+            left:  calc(50% - 770px);
+            top: 1px;
+        }
+    }
+
+    .about__list-item3{
+        text-align: center;
+        display: block;
+
+        &::after{
+            left: calc(50% + 280px);
+            top: 250px;   
+        }
+
+        &::before{
+            left:  calc(50% + 10px);
+            top: 290px;
+        }
+    }
+    .list-item__main{
+        margin-top: 42px;
+        margin-bottom: 42px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and ( max-width:375px ){
+    .list-item__img {
+        width: 311px;
+        height: 311px;
+    }
+    .about__list-item{
+        align-items: center;
+        text-align: center;
+
+
+        &::after{
+            content: none;
+        }
+
+        &::before{
+            left:  calc(50% - 170px);
+            top: 550px;
+        }
+    }
+
+    .about__list-item2{
+        text-align: center;
+        display: block;
+
+        &::after{
+            content: none;
+        }
+
+        &::before{
+            left:  calc(50% - 670px);
+            top: 1px;
+        }
+    }
+
+    .about__list-item3{
+        text-align: center;
+        display: block;
+
+        &::after{
+            content: none; 
+        }
+
+        &::before{
+            left:  calc(50% - 10px);
+            top: 290px;
+        }
+    }
+    .list-item__main{
+        margin-top: 42px;
+        margin-bottom: 42px;
+        width: 100%;
+        text-align: center;
+    }
+}
